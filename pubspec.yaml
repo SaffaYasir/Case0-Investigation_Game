@@ -1,0 +1,69 @@
+name: case_zero_detective
+description: "Case 0 - Crime Investigation"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+      # Vibration
+  flutter_local_notifications: ^17.0.0
+  shared_preferences: ^2.2.2
+  fl_chart: ^0.66.0
+  audioplayers: ^5.2.1
+
+  # Firebase dependencies (Updated to modern, compatible versions)
+
+  firebase_core: ^3.1.1
+  firebase_analytics: ^11.2.0
+  firebase_auth: ^5.1.1
+  cloud_firestore: ^5.0.2
+  google_sign_in: ^6.2.1
+
+
+  # State management and routing
+  flutter_riverpod: ^2.5.1
+  go_router: ^17.0.1
+  provider: ^6.1.2
+  vibration: ^2.0.0
+
+  # Animations & UI
+  flutter_animate: ^4.5.2
+  animated_text_kit: ^4.3.0
+  lottie: ^3.3.2
+  formz: ^0.8.0
+
+  intl: ^0.18.1                 # Internationalization
+  uuid: ^4.4.0
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/backgrounds/
+    - assets/images/ui/
+    - assets/images/ui/icons/
+    - assets/images/ui/card_backgrounds/
+    - assets/images/ui/achivements/
+    - assets/images/cases/case1/
+    - assets/images/cases/case1/characters/
+    - assets/images/puzzles/code_lock/numbers/
+    - assets/images/puzzles/memory_match/
+    - assets/images/puzzles/memory_match/card_fronts/
+    - assets/images/puzzles/memory_match/card_back.png
+    - assets/images/cases/case2/
+    - assets/images/cases/case2/characters/
+    - assets/sounds/
+

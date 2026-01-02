@@ -1,0 +1,112 @@
+# ==============================
+# Flutter / Dart
+# ==============================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+**/doc/api/
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+*.gen.dart
+
+# Coverage
+coverage/
+
+# ==============================
+# Flutter build outputs
+# ==============================
+*.dill
+*.apk
+*.aab
+*.ipa
+*.app
+*.xcarchive
+*.so
+*.exe
+*.dll
+
+# ==============================
+# Android
+# ==============================
+android/.gradle/
+android/local.properties
+android/**/build/
+android/**/.cxx/
+android/**/.idea/
+android/**/captures/
+
+# Secrets / Keystore (CRITICAL)
+*.jks
+*.keystore
+*.p12
+key.properties
+upload-keystore.jks
+
+# ==============================
+# iOS / macOS
+# ==============================
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/ephemeral/
+ios/Flutter/Flutter.framework
+ios/Flutter/App.framework
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+
+macos/Pods/
+macos/Flutter/ephemeral/
+
+# Xcode
+*.xcuserstate
+*.xcworkspace
+*.xcuserdata/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# ==============================
+# Web
+# ==============================
+web/.dart_tool/
+web/build/
+
+# ==============================
+# Desktop (Windows/Linux)
+# ==============================
+windows/flutter/ephemeral/
+windows/build/
+linux/flutter/ephemeral/
+linux/build/
+
+# ==============================
+# IDEs & OS Files
+# ==============================
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Logs & Temp
+# ==============================
+*.log
+*.tmp
+*.temp
+
+# ==============================
+# Firebase / Environment
+# ==============================
+.env
+.env.*
+google-services.json
+GoogleService-Info.plist
