@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Case Zero: Detective Investigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 4px solid #ff3333;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .logo-text {
+            font-size: 42px;
+            font-weight: bold;
+            color: #ff3333;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 51, 51, 0.5);
+            font-family: 'Courier New', monospace;
+        }
+
+        .title {
+            font-size: 28px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #aaa;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            background: rgba(46, 204, 113, 0.1);
+            border: 1px solid #2ecc71;
+            padding: 10px 20px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .last-updated span {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        main {
+            background: rgba(25, 25, 35, 0.9);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            border: 1px solid #333;
+        }
+
+        .important-notice {
+            background: rgba(255, 51, 51, 0.1);
+            border: 1px solid #ff3333;
+            border-left: 5px solid #ff3333;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .important-notice h3 {
+            color: #ff3333;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: #ff3333;
+            font-size: 32px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #333;
+        }
+
+        h2 {
+            color: #e74c3c;
+            font-size: 24px;
+            margin: 35px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #333;
+        }
+
+        h3 {
+            color: #ff6666;
+            font-size: 20px;
+            margin: 25px 0 10px;
+        }
+
+        h4 {
+            color: #ff9999;
+            font-size: 18px;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 30px;
+            color: #ccc;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(40, 40, 50, 0.5);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .data-table th {
+            background: #ff3333;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #333;
+            color: #ccc;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table tr:hover {
+            background: rgba(255, 51, 51, 0.05);
+        }
+
+        .contact-section {
+            background: rgba(52, 152, 219, 0.1);
+            border: 1px solid #3498db;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .contact-section h3 {
+            color: #3498db;
+        }
+
+        .evidence-tag {
+            display: inline-block;
+            background: rgba(255, 51, 51, 0.2);
+            border: 1px solid #ff3333;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin: 0 5px;
+            color: #ff9999;
+            font-family: 'Courier New', monospace;
+        }
+
+        .detective-note {
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 20px 0;
+            background: rgba(243, 156, 18, 0.05);
+            font-style: italic;
+            color: #f39c12;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .nav-links a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff3333;
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #ff3333;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            display: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 51, 51, 0.3);
+        }
+
+        .back-to-top:hover {
+            background: #ff5555;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .logo-text {
+                font-size: 32px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .data-table {
+                font-size: 14px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 8px 10px;
+            }
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .highlight {
+            background: rgba(255, 51, 51, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #ff9999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-text">CASE ZERO</div>
+            </div>
+            <h1 class="title">PRIVACY POLICY</h1>
+            <p class="subtitle">Case Zero: Detective Investigation Game</p>
+            <div class="last-updated">
+                Last Updated: <span>December 2024</span> | Version: 1.0.0
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="important-notice">
+                <h3>IMPORTANT - PLEASE READ CAREFULLY</h3>
+                <p>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application Case Zero: Detective Investigation. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the application.</p>
+            </div>
+
+            <div class="section">
+                <h2>1. Information We Collect</h2>
+                
+                <h3>1.1 Personal Information</h3>
+                <p>We may collect personal information that you voluntarily provide to us when you register with the application, including:</p>
+                <ul>
+                    <li>Email address (for account creation and authentication)</li>
+                    <li>Display name (detective alias for in-game use)</li>
+                    <li>Authentication tokens (for login services)</li>
+                </ul>
+
+                <h3>1.2 Game Data</h3>
+                <p>We collect information about your gameplay to provide and improve our services:</p>
+                <ul>
+                    <li>Progress and save data <span class="evidence-tag">ENCRYPTED</span></li>
+                    <li>Case completion status and investigation progress</li>
+                    <li>Game statistics and performance scores</li>
+                    <li>Achievements and detective ranks earned</li>
+                    <li>In-app purchase records and transaction history</li>
+                    <li>Game settings and preferences</li>
+                </ul>
+
+                <h3>1.3 Technical Information</h3>
+                <p>We automatically collect certain information when you use our application:</p>
+                <ul>
+                    <li>Device type, model, and manufacturer</li>
+                    <li>Operating system version and platform</li>
+                    <li>Application version and build number</li>
+                    <li>Crash reports and error logs for debugging</li>
+                    <li>Performance metrics and usage statistics</li>
+                    <li>Network information (connection type, IP address)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>2. How We Use Your Information</h2>
+                <p>We use the information we collect for various purposes, including:</p>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Purpose</th>
+                            <th>Information Used</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Providing and maintaining the game</td>
+                            <td>Account information, game data</td>
+                        </tr>
+                        <tr>
+                            <td>Saving your game progress and settings</td>
+                            <td>Progress data, preferences</td>
+                        </tr>
+                        <tr>
+                            <td>Improving game performance and user experience</td>
+                            <td>Technical information, usage statistics</td>
+                        </tr>
+                        <tr>
+                            <td>Processing in-app purchases</td>
+                            <td>Purchase records, payment information</td>
+                        </tr>
+                        <tr>
+                            <td>Providing customer support</td>
+                            <td>Contact information, game data</td>
+                        </tr>
+                        <tr>
+                            <td>Sending important updates and notifications</td>
+                            <td>Email address, device tokens</td>
+                        </tr>
+                        <tr>
+                            <td>Analyzing usage patterns for improvements</td>
+                            <td>Anonymous usage statistics</td>
+                        </tr>
+                        <tr>
+                            <td>Ensuring security and preventing fraud</td>
+                            <td>Authentication data, IP addresses</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>3. Data Security</h2>
+                <p>We implement appropriate security measures to protect your information:</p>
+                <ul>
+                    <li><strong>Local Storage Encryption:</strong> All locally stored game data is encrypted</li>
+                    <li><strong>Secure Server Connections:</strong> HTTPS/SSL encryption for all data transmission</li>
+                    <li><strong>Regular Security Audits:</strong> Periodic review and improvement of security measures</li>
+                    <li><strong>Access Controls:</strong> Strict authentication and authorization mechanisms</li>
+                    <li><strong>Data Anonymization:</strong> Where possible, data is anonymized for analysis</li>
+                    <li><strong>Firewall Protection:</strong> Network-level security for our servers</li>
+                </ul>
+
+                <div class="detective-note">
+                    Note: While we implement industry-standard security measures, no method of transmission over the Internet or electronic storage is 100% secure. We cannot guarantee absolute security.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>4. Third-Party Services</h2>
+                <p>We use trusted third-party services to operate our application:</p>
+                
+                <h3>4.1 Service Providers</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Purpose</th>
+                            <th>Data Shared</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Firebase (Google)</strong></td>
+                            <td>Authentication, database, analytics</td>
+                            <td>User ID, email, game data</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Google Analytics</strong></td>
+                            <td>Anonymous usage statistics</td>
+                            <td>Anonymized usage data</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Payment Processors</strong></td>
+                            <td>In-app purchase processing</td>
+                            <td>Purchase information, billing</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Huawei Mobile Services</strong></td>
+                            <td>App functionality (Huawei devices)</td>
+                            <td>Device information, app usage</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>4.2 Third-Party Links</h3>
+                <p>Our application may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to review their privacy policies.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Children's Privacy</h2>
+                <p>Our application is not intended for children under 13 years of age:</p>
+                <ul>
+                    <li>We do not knowingly collect personal information from children under 13</li>
+                    <li>If we become aware that we have collected personal information from a child under 13, we will take steps to delete that information</li>
+                    <li>Parents or guardians who believe their child has provided us with personal information should contact us immediately</li>
+                    <li>Users aged 13-18 should use the application with parental guidance</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>6. Data Retention</h2>
+                <p>We retain your information for as long as necessary:</p>
+                <ul>
+                    <li><strong>Active Accounts:</strong> Data is retained while your account is active</li>
+                    <li><strong>Inactive Accounts:</strong> Data may be archived after 24 months of inactivity</li>
+                    <li><strong>Legal Requirements:</strong> Some data may be retained for legal compliance</li>
+                    <li><strong>Deletion Requests:</strong> You can request data deletion at any time</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>7. Your Rights</h2>
+                <p>Depending on your location, you may have certain rights regarding your personal information:</p>
+                
+                <h3>7.1 Access and Correction</h3>
+                <ul>
+                    <li><strong>Right to Access:</strong> Request a copy of your personal information</li>
+                    <li><strong>Right to Correct:</strong> Request correction of inaccurate information</li>
+                </ul>
+
+                <h3>7.2 Deletion and Restriction</h3>
+                <ul>
+                    <li><strong>Right to Delete:</strong> Request deletion of your personal information</li>
+                    <li><strong>Right to Restrict:</strong> Request restriction of processing</li>
+                </ul>
+
+                <h3>7.3 Portability and Objection</h3>
+                <ul>
+                    <li><strong>Right to Portability:</strong> Request transfer of your data to another service</li>
+                    <li><strong>Right to Object:</strong> Object to certain types of processing</li>
+                    <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time</li>
+                </ul>
+
+                <p>To exercise these rights, please contact us using the information in the Contact section.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. International Data Transfers</h2>
+                <p>Your information may be transferred to and maintained on computers located outside of your country where data protection laws may differ:</p>
+                <ul>
+                    <li>By using our application, you consent to such transfers</li>
+                    <li>We implement appropriate safeguards for international transfers</li>
+                    <li>We comply with applicable data protection laws for cross-border transfers</li>
+                    <li>Data is stored on secure servers with geographical redundancy</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>9. Cookies and Tracking Technologies</h2>
+                <p>Our application may use cookies and similar tracking technologies:</p>
+                <ul>
+                    <li><strong>Session Cookies:</strong> Temporary cookies for session management</li>
+                    <li><strong>Analytics Cookies:</strong> For understanding usage patterns</li>
+                    <li><strong>Device Identifiers:</strong> For app functionality and personalization</li>
+                    <li><strong>Opt-Out:</strong> You can configure your device to refuse cookies</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>10. Changes to This Policy</h2>
+                <p>We may update our Privacy Policy from time to time:</p>
+                <ul>
+                    <li>We will notify you of any changes by posting the new Privacy Policy on this page</li>
+                    <li>We will update the "Last Updated" date at the top of this policy</li>
+                    <li>For material changes, we may provide additional notice through the application</li>
+                    <li>Your continued use of the application after changes constitutes acceptance</li>
+                </ul>
+            </div>
+
+            <div class="contact-section">
+                <h3>11. Contact Us</h3>
+                <p>If you have questions about this Privacy Policy, please contact us:</p>
+                
+                <h4>Email Contacts:</h4>
+                <p><strong>General Inquiries:</strong> info@casezero.pk</p>
+                <p><strong>Privacy Concerns:</strong> privacy@casezero.pk</p>
+                <p><strong>Data Requests:</strong> datarequest@casezero.pk</p>
+                <p><strong>Developer Contact:</strong> zyasir444@gmail.com</p>
+
+                <h4>Mailing Address:</h4>
+                <p>Case Zero Studios<br>
+                123 Investigation Street<br>
+                Detective City, DC 10001<br>
+                United States</p>
+
+                <div class="detective-note">
+                    Note: For privacy and security reasons, please do not send sensitive personal information via email. Use secure methods provided in the application for sensitive communications.
+                </div>
+            </div>
+        </main>
+
+        <div class="nav-links">
+            <a href="#top">Back to Top</a>
+            <a href="/terms.html">Terms & Conditions</a>
+            <a href="mailto:zyasir444@gmail.com">Contact Support</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Case Zero Studios. All rights reserved.</p>
+            <p>Case Zero: Detective Investigation is a trademark of Case Zero Studios.</p>
+            <p style="margin-top: 10px; color: #777; font-size: 13px;">
+                This document is classified as: <span class="evidence-tag">PUBLIC</span> | 
+                Version: 1.0.0 | 
+                Effective Date: December 2024
+            </p>
+        </footer>
+    </div>
+
+    <button class="back-to-top" id="backToTop">↑ Back to Top</button>
+
+    <script>
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+        
+        // Print functionality
+        const printButton = document.createElement('button');
+        printButton.textContent = 'Print This Page';
+        printButton.style.cssText = `
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+            z-index: 1000;
+        `;
+        
+        printButton.addEventListener('click', () => {
+            window.print();
+        });
+        
+        document.body.appendChild(printButton);
+        
+        // Hide print button when printing
+        window.addEventListener('beforeprint', () => {
+            printButton.style.display = 'none';
+            backToTop.style.display = 'none';
+        });
+        
+        window.addEventListener('afterprint', () => {
+            printButton.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
